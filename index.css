@@ -1,0 +1,394 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(240, 240, 240);
+}
+.container{
+    width:100%;
+    height: 600px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-image: url(../pics/container-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    width: 100%;
+    height: 100px;
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar li{
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.navbar a{
+    margin-top: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    padding:8px 14px 8px 14px;
+    border-radius: 8px;
+}
+.navbar a:hover {
+    background-color: black;
+    transition:0.6s;
+}
+.welcome{
+    margin-top: 150px;
+    width: 70%;
+    float: left;
+    height: 300px;
+}
+.booknow{
+    margin-top: 150px;
+    width: 30%;
+    float: left;
+    height: 300px;
+}
+.booknow button{
+    width: 40%;
+    padding:15px 30px 15px 30px;
+    border:0;
+    margin-top: 50px;
+    background-color: orange;
+    cursor: pointer;
+    font-weight: bold;
+    animation:movebutton 1s linear 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay:3s;
+    visibility: hidden;
+}
+.booknow button a{
+    text-decoration: none;
+    color: black;
+}
+@keyframes movebutton {
+    0%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0px);
+        visibility: visible;
+    }
+    
+}
+.welcome h2{
+    color: yellow;
+    font-weight: bold;
+    font-size: 72px;
+    margin-left: 1%;
+    animation:moveside 1s linear 1;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay:1s;
+    visibility: hidden;
+}
+@keyframes moveside {
+    0%{
+        transform: translateX(-800px);
+    }
+    100%{
+        transform: translateX(0px);
+        visibility: visible;
+    }
+}
+.welcome h3{
+    color: rgb(0, 189, 130);
+    font-size: 46px;
+    margin-left: 1%;
+    margin-top: 50px;
+    font-style: italic;
+    animation:moveup 1s linear 1;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay:1.5s;
+    visibility: hidden;
+}
+@keyframes moveup {
+    0%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0px);
+        visibility: visible;
+    }
+}
+/*about us*/
+.us{
+    height: 400px;
+}
+#about-us{
+    margin-top: 70px;
+}
+.a{
+    float: left;
+    width: 50%;
+}
+.a > * {
+    margin-left: 2%;
+}
+.a h4{
+    color: green;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.a p{
+    margin-top: 20px;
+    font-size: 18px;
+    color:rgb(70, 70, 70);
+}
+.b{
+    float: left;
+    width: 50%;
+}
+/*services*/
+.service{
+    height: 500px;
+    background-color: black;
+}
+.a img{
+    width: 90%;
+    height: 500px;
+}
+.b h4{
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.b li{
+    color: white;
+    margin-top: 35px;
+    font-size: 20px;
+}
+/*contact us*/
+#contact{
+    height: 170PX;
+    background-color: rgb(50, 50, 50);
+    text-align: center;
+}
+#contact h4{
+    color: white;
+    padding-top: 70px;
+}
+#contact ul{
+    background-color: rgb(50, 50, 50);
+}
+#contact ul li{
+    display: inline-block;
+    margin-top: 10px;
+    color:red;
+}
+#contact img{
+    height: 25px;
+    margin-left: 50px;
+    width: 30px;
+    border-radius: 15px;
+    border:2px;
+    cursor: pointer;
+    padding:6px;
+}
+#contact img:hover{
+    background-color: rgb(248, 6, 6);
+    transition: 0.5s;
+}
+/************
+order page
+*************/
+.order-container{
+    background-color: white;
+    height:800px;
+    background-image: url(../pics/deep-fried-balls-made-green-banana-sitting-black-plate-traditional-latin-american-food-classy-table-setting-69857939.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.order-container .navbar{
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.order-container .navbar ul{
+    list-style: none;
+}
+.order-container .navbar li{
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.order-container .navbar a{
+    margin-top: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: red;
+    padding:8px 14px 8px 14px;
+    border-radius: 8px;
+}
+.order-container .navbar a:hover {
+    background-color: transparent;
+    color:rgb(0, 130, 189);
+    transition:0.6s;
+}
+.make-order{
+    width: 40%;
+    background:rgb(240, 240, 240);
+    height: 400px;
+    border-radius: 15px;
+    margin-top: 60px;
+    margin-left: 1%;
+    opacity: 0.5;
+    float: left;
+    animation:movein 1s linear 1;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+.order-form{
+    background-color: transparent;
+    position: absolute;
+    width: 20%;
+    height: 400px;
+    margin-top: 60px;
+    margin-left: 1%;
+    float: left;
+    z-index: 1;
+    animation:movein 1s linear 1;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+@keyframes movein {
+    0%{
+        transform: translateX(-400px);
+    }
+    100%{
+        transform:translateX(0);
+        visibility: visible;
+    }
+}
+
+.make-order form{
+    width: 100%;
+    height:100%;
+}
+.order-form form input[type=text]{
+    height: 28px;
+    width: 80%;
+    padding-left: 2%;
+    margin-top: 30px;
+    margin-left: 5%;
+    border:1px solid rgb(210, 210, 210);
+    border-radius: 5px;
+}
+.order-form form select{
+    height: 28px;
+    width: 80%;
+    padding-left: 2%;
+    margin-top: 30px;
+    margin-left: 5%;
+    border:1px solid rgb(210, 210, 210);
+    border-radius: 5px;
+}
+.order-form form input[type=number]{
+    height: 28px;
+    width: 80%;
+    padding-left: 2%;
+    margin-top: 30px;
+    margin-left: 5%;
+    border:1px solid rgb(210, 210, 210);
+    border-radius: 5px;
+}
+.order-form form input[type=submit]{
+    width: 40%;
+    float: right;
+    margin-right: 14%;
+    margin-top: 30px;
+    background-color: rgb(0, 150, 0);
+    height: 35px;
+    border:0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.b h3{
+    color:red;
+    font-size: 28px;
+    margin-top: 20px;
+}
+.order-table{
+    width: 90%;
+    background-color: white;
+    height: 550px;
+    overflow-y: scroll;
+    border-radius: 5px;
+    
+}
+.order-table table{
+    padding: 30px;
+}
+.order-table table img{
+    width: 150px;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.order-table table thead tr{
+    height: 50px;
+    padding-left: 8px;
+}
+.order-table table thead th{
+    padding-left: 8px;
+    padding-right: 8px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    font-size: 20px;
+    color:green;
+    text-align: left;
+    font-weight: bold;
+    width: flex;
+    border-right:2px solid black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.order-table table th:first-child{
+    border-left: 2px solid black;
+}
+.order-table table td:first-child{
+    
+    border-left: 2px solid black;
+    font-weight: bold;
+    color:rgb(0, 130, 189);
+}
+.order-table table td{
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 18px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    height: 150px;
+}
+.order-table table td:hover{
+    color: rgb(0, 130, 189);
+    transition: 0.6s;
+}
+.order-table table td:last-child{
+    width: 80px;
+}
